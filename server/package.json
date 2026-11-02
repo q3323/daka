@@ -1,0 +1,22 @@
+{
+  "name": "daka-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Backend API for the Daka HarmonyOS app",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "check": "node --check src/index.js && node --check src/config.js && node --check src/db.js && node --check src/auth.js && node --check src/utils.js && node --check src/routes/auth.js && node --check src/routes/classes.js && node --check src/routes/checkIns.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.5"
+  }
+}

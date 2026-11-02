@@ -1,0 +1,28 @@
+/node_modules
+/oh_modules
+/server/node_modules
+/local.properties
+/.idea
+**/build
+**/.preview
+/.hvigor
+.cxx
+/.clangd
+/.clang-format
+/.clang-tidy
+**/.test
+/.appanalyzer
+
+# Local runtime and migration artifacts
+/server/.env
+*.log
+*.tar.gz
+/daka-layout.json
+/daka-screen.jpeg
+
+# Signing material must never be committed
+*.p12
+*.p7b
+*.cer
+*.jks
+*.keystore
